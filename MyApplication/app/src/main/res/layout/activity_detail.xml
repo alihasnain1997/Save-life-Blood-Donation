@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.detail">
+    name,contact,detail,type,city;
+    int id,req_id,unit;
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/give_blood"
+    android:alpha="0.2"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:id="@+id/tv_det_name"
+        android:layout_below="@+id/logo"
+        android:hint="Name"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:id="@+id/tv_det_contact"
+        android:layout_below="@+id/tv_detail_city"
+        android:hint="contact"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

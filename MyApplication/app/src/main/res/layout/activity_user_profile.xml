@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.user_profile">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/types"
+        android:scaleType="centerCrop"
+        android:alpha="0.3">
+    </ImageView>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:alpha="0.3"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/download"
+        android:id="@+id/img_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name"
+        android:layout_below="@+id/img_user"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/tv_username_profile"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_email_profile"
+        android:layout_below="@+id/tv_username_profile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="UseEMail@email.com"
+        android:textSize="25sp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_bloodgroup_profile"
+        android:layout_below="@+id/tv_email_profile"
+        android:text="bloodtype"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_contact_profile"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_bloodgroup_profile"
+        android:text="03004205619"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_contact_profile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_edit_profile"
+        android:text="Edit Profile"
+        android:gravity="center"/>
+</RelativeLayout>

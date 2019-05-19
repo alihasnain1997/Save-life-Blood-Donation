@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.request_detail">
+    
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/card_view1">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view1"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_detail_name"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="Name"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_detail_name"
+                android:id="@+id/tv_detail_contact"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="03234693230"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/tv_detail_type"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="blood"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_detail_name"/>
+            <TextView
+                android:id="@+id/tv_detail_unit"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:text="Unit"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/tv_detail_type"
+                android:layout_below="@+id/tv_detail_name"/>
+            <TextView
+                android:id="@+id/tv_detail_city"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:text="City"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_detail_type"/>
+            <TextView
+                android:id="@+id/tv_detail_description"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:text="@string/this_is_the_descripton_of_the_request"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_detail_city"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

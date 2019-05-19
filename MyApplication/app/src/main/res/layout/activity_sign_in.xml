@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.sign_in">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/drops_of_life"
+        android:scaleType="centerCrop"
+        android:alpha="0.1"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            >
+
+            <ImageView android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginBottom="24dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/et_username_input"
+
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/username_up_bg"
+                android:background="@drawable/bg_corners"
+                android:hint="Enter Username"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:fontFamily="casual"
+                />
+            <EditText
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/et_password_input"
+                android:layout_below="@+id/et_username_input"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/key_icon"
+                android:background="@drawable/bg_corners"
+                android:hint="Enter Password"
+                android:gravity="center"
+                android:fontFamily="casual"
+                android:textStyle="bold"
+                android:inputType="textPassword"
+                />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:text="@string/login"/>
+
+            <TextView android:id="@+id/link_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="No account yet? Create one"
+                android:gravity="center"
+                android:textSize="16dip"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

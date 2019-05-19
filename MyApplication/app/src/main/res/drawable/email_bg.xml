@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:width="40dp" android:height="40dp">
+        <shape android:shape="rectangle"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/white"/>
+            <corners android:topLeftRadius="6dp" android:bottomLeftRadius="6dp"/>
+            <stroke android:color="@color/white" android:width="2dp"/>
+        </shape>
+    </item>
+
+    <item android:height="40dp" android:width="40dp"
+        android:drawable="@drawable/email"
+        android:gravity="center"/>
+
+</layer-list>

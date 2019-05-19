@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.ali.savelife">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.update_user" />
+        <activity
+            android:name=".Activities.myrequest"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.request_detail"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity android:name=".Activities.sign_up" />
+        <activity
+            android:name=".Activities.all_request"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.add_request"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity
+            android:name=".Activities.Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.user_profile"
+            android:parentActivityName=".Activities.Main2Activity" />
+        <activity android:name=".Activities.sign_in" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
